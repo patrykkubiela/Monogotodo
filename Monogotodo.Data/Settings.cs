@@ -1,4 +1,4 @@
-namespace Crumbs.Data
+namespace Monogotodo.Data
 {
     public static class Settings
     {
