@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Api", "Monogotodo.Api\Monogotodo.Api.csproj", "{56F893B2-A23B-4AE8-B816-E9F9BC600132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Core", "Monogotodo.Core\Monogotodo.Core.csproj", "{A9E5F2A7-29A6-4975-9FA6-CFB20EB4FA7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Data", "Monogotodo.Data\Monogotodo.Data.csproj", "{95B7197E-CC94-4109-81AC-CAA454417A16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Shared", "Monogotodo.Shared\Monogotodo.Shared.csproj", "{9CBCB6CC-50AD-4A2C-9766-123B62D07AF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Tests.Core", "Monogotodo.Tests.Core\Monogotodo.Tests.Core.csproj", "{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56F893B2-A23B-4AE8-B816-E9F9BC600132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56F893B2-A23B-4AE8-B816-E9F9BC600132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56F893B2-A23B-4AE8-B816-E9F9BC600132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56F893B2-A23B-4AE8-B816-E9F9BC600132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E5F2A7-29A6-4975-9FA6-CFB20EB4FA7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E5F2A7-29A6-4975-9FA6-CFB20EB4FA7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E5F2A7-29A6-4975-9FA6-CFB20EB4FA7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E5F2A7-29A6-4975-9FA6-CFB20EB4FA7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95B7197E-CC94-4109-81AC-CAA454417A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B7197E-CC94-4109-81AC-CAA454417A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B7197E-CC94-4109-81AC-CAA454417A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B7197E-CC94-4109-81AC-CAA454417A16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CBCB6CC-50AD-4A2C-9766-123B62D07AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBCB6CC-50AD-4A2C-9766-123B62D07AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBCB6CC-50AD-4A2C-9766-123B62D07AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBCB6CC-50AD-4A2C-9766-123B62D07AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
