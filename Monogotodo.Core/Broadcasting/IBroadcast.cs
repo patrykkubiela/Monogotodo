@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace Monogotodo.Core.Broadcasting
 {
     public interface IBroadcast

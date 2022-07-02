@@ -6,7 +6,7 @@ namespace Monogotodo.Core
     {
         public MonogotoActor()
         {
-            Receive<Monogoto>(crumb =>
+            Receive<Monogoto>(monogoto =>
             {
                 Console.WriteLine($"Name of crumb: ");
             });
