@@ -1,4 +1,4 @@
-﻿namespace Monogoto.Shared
+﻿namespace Monogotodo.Shared
 {
     public enum MonogotoType
     {
