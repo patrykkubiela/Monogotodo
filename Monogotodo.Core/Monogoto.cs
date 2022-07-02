@@ -1,8 +1,6 @@
-using System;
-
-namespace Crumbs.Core
+namespace Monogotodo.Core
 {
-    public class Crumb : CrumbBase
+    public class Monogoto : MonogotoBase
     {
         public override void Receive()
         {

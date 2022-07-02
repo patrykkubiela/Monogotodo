@@ -1,37 +1,35 @@
-using System;
-using System.Collections.Generic;
-using Crumbs.Shared;
+using Monogotodo.Shared;
 
-namespace Crumbs.Core
+namespace Monogotodo.Core
 {
-    public abstract class CrumbBase : ICrumb
+    public abstract class MonogotoBase : IMonogoto
     {
         public Guid Uuid { get; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public CrumbType Type { get; set; }
-        public ICrumb Broadcaster { get; set; }
-        public List<ICrumb> Observers { get; }
+        public MonogotoType Type { get; set; }
+        public IMonogoto Broadcaster { get; set; }
+        public List<IMonogoto> Observers { get; }
 
 
-        protected CrumbBase()
+        protected MonogotoBase()
         {
             Uuid = Guid.NewGuid();
-            Observers = new List<ICrumb>();
+            Observers = new List<IMonogoto>();
 
-            // Receive<Crumb>(RegisterObserver);
+            // Receive<Monogoto>(RegisterObserver);
         }
 
         public abstract void Receive();
 
 
-        public virtual void RegisterObserver(ICrumb observer)
+        public virtual void RegisterObserver(IMonogoto observer)
         {
             Observers.Add(observer);
             observer.Broadcaster = this;
         }
 
-        public virtual void UnregisterObserver(ICrumb observer)
+        public virtual void UnregisterObserver(IMonogoto observer)
         {
             Observers.Remove(observer);
         }
@@ -41,22 +39,22 @@ namespace Crumbs.Core
             Observers.ForEach(o => o.Receive());
         }
 
-        public IEnumerable<ICrumb> GetBranch()
+        public IEnumerable<IMonogoto> GetBranch()
         {
             return Branch();
         }
 
-        public IEnumerable<ICrumb> GetWholeChain()
+        public IEnumerable<IMonogoto> GetWholeChain()
         {
-            var result = new List<ICrumb>();
+            var result = new List<IMonogoto>();
             result.AddRange(Branch());
             result.AddRange(Chain());
             return result;
         }
 
-        private IEnumerable<ICrumb> GetObservers(IEnumerable<ICrumb> observers)
+        private IEnumerable<IMonogoto> GetObservers(IEnumerable<IMonogoto> observers)
         {
-            var result = new List<ICrumb>();
+            var result = new List<IMonogoto>();
 
             foreach (var observer in observers)
             {
@@ -67,14 +65,14 @@ namespace Crumbs.Core
             return result;
         }
 
-        private IEnumerable<ICrumb> Chain()
+        private IEnumerable<IMonogoto> Chain()
         {
             return GetBroadcasters(this);
         }
 
-        private IEnumerable<ICrumb> GetBroadcasters(ICrumb observer)
+        private IEnumerable<IMonogoto> GetBroadcasters(IMonogoto observer)
         {
-            var result = new List<ICrumb>();
+            var result = new List<IMonogoto>();
             if (observer?.Broadcaster != null)
             {
                 result.Add(observer.Broadcaster);
@@ -84,9 +82,9 @@ namespace Crumbs.Core
             return result;
         }
 
-        private IEnumerable<ICrumb> Branch()
+        private IEnumerable<IMonogoto> Branch()
         {
-            var result = new List<ICrumb>();
+            var result = new List<IMonogoto>();
             result.Add(this);
             result.AddRange(GetObservers(Observers));
             return result;

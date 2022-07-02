@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 
-namespace Crumbs.Core.Broadcasting
+namespace Monogotodo.Core.Broadcasting
 {
     public interface IBroadcast
     {
-        List<ICrumb> Observers { get; }
+        List<IMonogoto> Observers { get; }
         
-        void RegisterObserver(ICrumb observer);
-        void UnregisterObserver(ICrumb observer);
+        void RegisterObserver(IMonogoto observer);
+        void UnregisterObserver(IMonogoto observer);
         void Broadcast();
     }
 }

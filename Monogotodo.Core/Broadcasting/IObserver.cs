@@ -1,4 +1,4 @@
-namespace Crumbs.Core.Broadcasting
+namespace Monogotodo.Core.Broadcasting
 {
     public interface IObserver
     {
