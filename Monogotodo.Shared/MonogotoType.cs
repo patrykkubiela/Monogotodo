@@ -1,6 +1,6 @@
-﻿namespace Crumbs.Shared
+﻿namespace Monogoto.Shared
 {
-    public enum CrumbType
+    public enum MonogotoType
     {
         Appointment,
         Task,
