@@ -4,6 +4,6 @@ namespace Monogotodo.Data.Repositories
 {
     public interface IMonogotoRepository
     {
-        ICollection<Monogoto> GetMonogotos(string query);
+        Task<IList<Monogoto>> GetMonogotos(string query);
     }
 }

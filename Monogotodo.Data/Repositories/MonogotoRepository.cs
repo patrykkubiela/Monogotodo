@@ -1,12 +1,20 @@
-﻿using Monogotodo.Data.Models;
+﻿using MongoDB.Driver;
+using Monogotodo.Data.Models;
 
 namespace Monogotodo.Data.Repositories
 {
     public class MonogotoRepository : IMonogotoRepository
     {
-        public ICollection<Monogoto> GetMonogotos(string query)
+        private readonly IMongoCollection<Monogoto> _monogotoCollection;
+
+        public MonogotoRepository(IMongoDatabase mongoDatabase)
         {
-            return Array.Empty<Monogoto>();
+            _monogotoCollection = mongoDatabase.GetCollection<Monogoto>("monogoto");
+        }
+        
+        public async Task<IList<Monogoto>> GetMonogotos(string query)
+        {
+            return await _monogotoCollection.Find(_ => true).ToListAsync();
         }
     }
 }

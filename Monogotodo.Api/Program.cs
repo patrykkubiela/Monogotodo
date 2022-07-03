@@ -1,5 +1,6 @@
 using MongoDB.Driver;
 using Monogotodo.Data;
+using Monogotodo.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,8 @@ builder.Services.AddSingleton<IMongoDatabase>(options =>
     return client.GetDatabase(settings.DatabaseName);
 });
 
+builder.Services.AddSingleton<IMonogotoRepository, MonogotoRepository>();
+    
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
