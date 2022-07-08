@@ -1,5 +1,6 @@
 ﻿using Monogotodo.Data.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using Monogotodo.Data.Models;
 
 namespace Monogotodo.Api.Controllers
 {
@@ -15,9 +16,16 @@ namespace Monogotodo.Api.Controllers
         }
         
         [HttpGet]
-        public IActionResult GetTest()
+        public IActionResult GetMonogotos()
         {
-            var monogotos = _monogotoRepository.GetMonogotos("SELECT * FROM public.\"Queries\"");
+            var monogotos = _monogotoRepository.GetMonogotos();
+            return Ok("Testing crumb controller");
+        }
+
+        [HttpPut]
+        public IActionResult PutMonogoto([FromBody] Monogoto monogoto)
+        {
+            _monogotoRepository.InsertMonogoto(monogoto);
             return Ok("Testing crumb controller");
         }
     }

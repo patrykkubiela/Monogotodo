@@ -3,7 +3,7 @@ using Monogotodo.Data.Models;
 
 namespace Monogotodo.Data.Repositories
 {
-    public class MonogotoRepository : IMonogotoRepository
+    public class  MonogotoRepository : IMonogotoRepository
     {
         private readonly IMongoCollection<Monogoto> _monogotoCollection;
 
@@ -12,9 +12,14 @@ namespace Monogotodo.Data.Repositories
             _monogotoCollection = mongoDatabase.GetCollection<Monogoto>("monogoto");
         }
         
-        public async Task<IList<Monogoto>> GetMonogotos(string query)
+        public async Task<IList<Monogoto>> GetMonogotos()
         {
             return await _monogotoCollection.Find(_ => true).ToListAsync();
+        }
+
+        public async Task InsertMonogoto(Monogoto monogoto)
+        {
+            await _monogotoCollection.InsertOneAsync(monogoto);
         }
     }
 }
