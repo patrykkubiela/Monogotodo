@@ -21,5 +21,12 @@ namespace Monogotodo.Data.Repositories
         {
             await _monogotoCollection.InsertOneAsync(monogoto);
         }
+
+        public async Task<IList<Monogoto>> GetMonogotosByName(string name)
+        {
+            var list = await _monogotoCollection.Find(x => x.Name == name)
+                .ToListAsync();
+            return list;
+        }
     }
 }

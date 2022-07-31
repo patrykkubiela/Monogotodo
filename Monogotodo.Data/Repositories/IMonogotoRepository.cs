@@ -6,5 +6,6 @@ namespace Monogotodo.Data.Repositories
     {
         Task<IList<Monogoto>> GetMonogotos();
         Task InsertMonogoto(Monogoto monogoto);
+        Task<IList<Monogoto>> GetMonogotosByName(string name);
     }
 }

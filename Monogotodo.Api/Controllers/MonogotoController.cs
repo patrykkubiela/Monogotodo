@@ -5,7 +5,7 @@ using Monogotodo.Data.Models;
 namespace Monogotodo.Api.Controllers
 {
     [ApiController]
-    [Route("crumb")]
+    [Route("api/[controller]")]
     public class MonogotoController: ControllerBase
     {
         private readonly IMonogotoRepository _monogotoRepository;
@@ -18,8 +18,16 @@ namespace Monogotodo.Api.Controllers
         [HttpGet]
         public IActionResult GetMonogotos()
         {
-            var monogotos = _monogotoRepository.GetMonogotos();
-            return Ok("Testing crumb controller");
+            var monogotos = _monogotoRepository.GetMonogotos().Result;
+            return Ok(monogotos);
+        }
+        
+        [HttpGet]
+        [Route("{name}")]
+        public IActionResult GetMonogotosByName([FromRoute] string name)
+        {
+            var monogotos = _monogotoRepository.GetMonogotosByName(name).Result;
+            return Ok(monogotos);
         }
 
         [HttpPut]

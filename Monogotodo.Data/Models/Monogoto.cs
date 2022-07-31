@@ -8,7 +8,7 @@ namespace Monogotodo.Data.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string Id { get; }
+        public ObjectId Id { get; set; } = ObjectId.GenerateNewId();
         
         [BsonElement("name")]
         public string Name { get; set; }
