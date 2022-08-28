@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Api", "Monogotod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Core", "Modules\Monogotodo\Monogotodo.Core\Monogotodo.Core.csproj", "{A9E5F2A7-29A6-4975-9FA6-CFB20EB4FA7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Data", "Modules\Data\Monogotodo.Data\Monogotodo.Data.csproj", "{95B7197E-CC94-4109-81AC-CAA454417A16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Core", "Modules\Data\Data.Core\Data.Core.csproj", "{95B7197E-CC94-4109-81AC-CAA454417A16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Shared", "Modules\Monogotodo\Monogotodo.Shared\Monogotodo.Shared.csproj", "{9CBCB6CC-50AD-4A2C-9766-123B62D07AF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Tests.Core", "Modules\Monogotodo\Monogotodo.Tests.Core\Monogotodo.Tests.Core.csproj", "{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Core.Tests", "Modules\Monogotodo\Monogotodo.Core.Tests\Monogotodo.Core.Tests.csproj", "{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Monogotodo", "Monogotodo", "{A1B4DF69-DFEF-400E-8050-29DECA64586B}"
 EndProject

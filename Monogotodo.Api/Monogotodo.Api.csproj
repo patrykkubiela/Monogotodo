@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Modules\Data\Monogotodo.Data\Monogotodo.Data.csproj" />
+    <ProjectReference Include="..\Modules\Data\Data.Core\Data.Core.csproj" />
     <ProjectReference Include="..\Modules\Monogotodo\Monogotodo.Shared\Monogotodo.Shared.csproj" />
   </ItemGroup>
 

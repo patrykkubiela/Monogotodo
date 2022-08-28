@@ -2,7 +2,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using Monogotodo.Shared;
 
-namespace Monogotodo.Data.Models
+namespace Data.Core.Models
 {
     public class Monogoto
     {

@@ -1,6 +1,7 @@
-﻿using Monogotodo.Data.Models;
+﻿
+using Data.Core.Models;
 
-namespace Monogotodo.Data.Repositories
+namespace Data.Core.Repositories
 {
     public interface IMonogotoRepository
     {

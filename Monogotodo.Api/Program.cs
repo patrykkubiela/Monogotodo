@@ -1,6 +1,6 @@
+using Data.Core;
+using Data.Core.Repositories;
 using MongoDB.Driver;
-using Monogotodo.Data;
-using Monogotodo.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
