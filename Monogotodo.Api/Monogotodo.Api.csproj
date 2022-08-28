@@ -9,11 +9,11 @@
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.16.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-    <ProjectReference Include="..\Monogotodo.Shared\Monogotodo.Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Monogotodo.Data\Monogotodo.Data.csproj" />
+    <ProjectReference Include="..\Modules\Data\Monogotodo.Data\Monogotodo.Data.csproj" />
+    <ProjectReference Include="..\Modules\Monogotodo\Monogotodo.Shared\Monogotodo.Shared.csproj" />
   </ItemGroup>
 
 </Project>
