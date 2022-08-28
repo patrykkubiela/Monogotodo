@@ -1,4 +1,4 @@
-namespace Monogotodo.Data
+namespace Data.Core
 {
     public class MongoDbSettings
     {

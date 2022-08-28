@@ -1,10 +1,8 @@
 ﻿using System.Linq;
-using Monogotodo.Core;
-using Monogotodo.Core.Broadcasting;
 using Moq;
 using Xunit;
 
-namespace Monogotodo.Tests.Core
+namespace Monogotodo.Core.Tests
 {
     public class MonogotoTest
     {

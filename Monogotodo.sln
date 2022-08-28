@@ -5,13 +5,21 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Api", "Monogotodo.Api\Monogotodo.Api.csproj", "{56F893B2-A23B-4AE8-B816-E9F9BC600132}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Core", "Monogotodo.Core\Monogotodo.Core.csproj", "{A9E5F2A7-29A6-4975-9FA6-CFB20EB4FA7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Core", "Modules\Monogotodo\Monogotodo.Core\Monogotodo.Core.csproj", "{A9E5F2A7-29A6-4975-9FA6-CFB20EB4FA7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Data", "Monogotodo.Data\Monogotodo.Data.csproj", "{95B7197E-CC94-4109-81AC-CAA454417A16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Core", "Modules\Data\Data.Core\Data.Core.csproj", "{95B7197E-CC94-4109-81AC-CAA454417A16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Shared", "Monogotodo.Shared\Monogotodo.Shared.csproj", "{9CBCB6CC-50AD-4A2C-9766-123B62D07AF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Shared", "Modules\Monogotodo\Monogotodo.Shared\Monogotodo.Shared.csproj", "{9CBCB6CC-50AD-4A2C-9766-123B62D07AF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Tests.Core", "Monogotodo.Tests.Core\Monogotodo.Tests.Core.csproj", "{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monogotodo.Core.Tests", "Modules\Monogotodo\Monogotodo.Core.Tests\Monogotodo.Core.Tests.csproj", "{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Monogotodo", "Monogotodo", "{A1B4DF69-DFEF-400E-8050-29DECA64586B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{57F545A2-0694-420C-A6E3-380C1047B1CE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MonogotodoDependencyTree", "MonogotodoDependencyTree", "{B86067DA-C10B-4277-8DA6-F029FC0C6A89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notifications", "Notifications", "{7F80AFAC-379D-4B87-9307-653CD6650261}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,5 +50,11 @@ Global
 		{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB8DFE1-3610-4C2B-BF3F-C33604837A75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95B7197E-CC94-4109-81AC-CAA454417A16} = {57F545A2-0694-420C-A6E3-380C1047B1CE}
+		{A9E5F2A7-29A6-4975-9FA6-CFB20EB4FA7B} = {A1B4DF69-DFEF-400E-8050-29DECA64586B}
+		{1EB8DFE1-3610-4C2B-BF3F-C33604837A75} = {A1B4DF69-DFEF-400E-8050-29DECA64586B}
+		{9CBCB6CC-50AD-4A2C-9766-123B62D07AF0} = {A1B4DF69-DFEF-400E-8050-29DECA64586B}
 	EndGlobalSection
 EndGlobal

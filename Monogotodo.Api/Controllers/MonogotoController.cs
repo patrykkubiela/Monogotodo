@@ -1,6 +1,6 @@
-﻿using Monogotodo.Data.Repositories;
+﻿using Data.Core.Models;
+using Data.Core.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Monogotodo.Data.Models;
 
 namespace Monogotodo.Api.Controllers
 {
