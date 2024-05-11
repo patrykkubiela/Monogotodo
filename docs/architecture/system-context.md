@@ -4,7 +4,7 @@ System Context Diagram
 This diagram describes MonogotoDo system context.
 
 <h1 align="center">
-  <img src="temp" alt="Monogotodo">
+  <img src="https://github.com/patrykkubiela/Monogotodo/blob/master/docs/architecture/structurizr-SystemContext-001.png" alt="Monogotodo">
 </h1>
 
 Here is code for it written in [scructurzr](https://structurizr.com):
