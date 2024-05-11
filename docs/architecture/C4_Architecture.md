@@ -8,7 +8,7 @@ System Context Diagram
 </h1>
 
 
-- *This diagram describes MonogotoDo component context.*
+- *This diagram describes MonogotoDo container context.*
 
 <h1 align="center">
   <img src="./structurizr-ContainerContext-001.png" alt="Monogotodo C2 Diagram">
